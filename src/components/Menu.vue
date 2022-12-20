@@ -2,12 +2,16 @@
 
     <aside class="w-64 sidebar" aria-label="Sidebar">
 
-        <div class="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800 mysidebar">
+        <div class="overflow-y-auto py-4 px-3 bg-gray-50 rounded mysidebar">
             <ul class="space-y-2">
                 <div class="dfoto">
-                    <img class="foto" src="../assets/20210106_133513.jpg" alt="Foto" srcset="">
+                    <img class="foto" src="../assets/eyr.jpg" alt="Foto" srcset="">
                 </div>
-                <hr>
+                <h1 class="tituloNombre">Ronald Edwin Villalobos Rivera</h1>
+                <hr class="hr">
+                <h2 class="tituloCarrera">Ing. Desarrollo de Software</h2>
+                <br>
+                <br>
                 <li>
                     <a href="#"
                         class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -17,7 +21,9 @@
                             <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
                             <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
                         </svg>
-                        <span class="ml-3">Dashboard</span>
+                        <span class="ml-3">Sobre mi</span>
+                        <font-awesome-icon icon="fa-solid fa-user-secret" />
+                        <font-awesome-icon icon="fa-solid fa-card" />
                     </a>
                 </li>
                 <li>
@@ -30,7 +36,7 @@
                                 d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z">
                             </path>
                         </svg>
-                        <span class="flex-1 ml-3 whitespace-nowrap">Kanban</span>
+                        <span class="flex-1 ml-3 whitespace-nowrap">Estudios</span>
                     </a>
                 </li>
                 <li>
@@ -46,7 +52,7 @@
                                 d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z">
                             </path>
                         </svg>
-                        <span class="flex-1 ml-3 whitespace-nowrap">Inbox</span>
+                        <span class="flex-1 ml-3 whitespace-nowrap">Portafolio</span>
                     </a>
                 </li>
                 <li>
@@ -60,7 +66,7 @@
                                 d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
                                 clip-rule="evenodd"></path>
                         </svg>
-                        <span class="ml-3">Documentation</span>
+                        <span class="ml-3">Descargar PDF</span>
                     </a>
                 </li>
             </ul>
@@ -80,16 +86,36 @@ export default {
     margin: 0;
     max-width: 25%;
     padding: 0;
-    width: 25%;
+    width: 20%;
 }
 
 .mysidebar {
+    background: #192D55;
     height: 100vh;
 }
 
 .foto {
+    border: 2px #fff solid;
     border-radius: 25px;
     margin: 0 auto;
+    height: 200px;
     width: 60%;
+}
+.hr{
+    border: 2px solid #fff; 
+    border-radius: 300px/10px; 
+    height: 0px; 
+    text-align: center;
+}
+
+.tituloNombre{
+    text-align: center;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+.tituloCarrera{
+    color: #E4C109;
+    text-align: center;
 }
 </style>
