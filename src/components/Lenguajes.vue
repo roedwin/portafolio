@@ -1,5 +1,5 @@
 <template>
-  <div>Hello work!!</div>
+  <h2>Lenguajes</h2>
 </template>
 
 <script>

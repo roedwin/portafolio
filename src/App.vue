@@ -1,15 +1,15 @@
 <script>
 import Menu from "./components/Menu.vue"
-import VistaMain from './components/VistaMain.vue'
+import { RouterView } from'vue-router'
 export default {
-  components: { Menu, VistaMain },
+  components: { Menu },
 }
 </script>
  
 
 <template>
   <Menu></Menu>
-  <vista-main></vista-main>
+  <RouterView />
 </template>
 
 <style scoped>
